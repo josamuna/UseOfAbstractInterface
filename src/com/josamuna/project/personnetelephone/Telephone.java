@@ -1,4 +1,4 @@
-package com.josamuna.project.exemple1;
+package com.josamuna.project.personnetelephone;
 
 public class Telephone {
 	private String numero;

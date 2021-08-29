@@ -1,4 +1,4 @@
-package com.josamuna.project.exemple2;
+package com.josamuna.project.personneconjoint;
 
 public class Conjoint {
 	

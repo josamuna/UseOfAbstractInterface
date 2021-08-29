@@ -1,4 +1,4 @@
-package com.josamuna.project.exemple2;
+package com.josamuna.project.personneconjoint;
 
 public class Personne {
 	private int id;
@@ -49,9 +49,15 @@ public class Personne {
 	}
 
 	public void showIdentity(int id_personne) {
-		System.out.println(String.format(
-				"Personne : [Id = %s, Nom = %s, Prénom = %s]\nConjoint : [Id = %s, Nom = %s, Prénom = %s]", 
-				id, nom, prenom, conjoint.getId(), conjoint.getNom(), conjoint.getPrenom()));
+		if(conjoint == null) {
+			System.out.println(String.format(
+					"Personne : [Id = %s, Nom = %s, Prénom = %s]\nLa personne n'a pas de Conjoint, il est Célibataire", 
+					id, nom, prenom));
+		} else {
+			System.out.println(String.format(
+					"Personne : [Id = %s, Nom = %s, Prénom = %s]\nConjoint : [Id = %s, Nom = %s, Prénom = %s]", 
+					id, nom, prenom, conjoint.getId(), conjoint.getNom(), conjoint.getPrenom()));
+		}
 		
 	}
 

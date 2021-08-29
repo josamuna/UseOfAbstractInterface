@@ -1,4 +1,4 @@
-package com.josamuna.project.exemple1;
+package com.josamuna.project.personnetelephone;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,14 @@ public class Personne {
 		this.id = id;
 		this.nom = nom;
 		this.prenom = prenom;
+	}	
+
+	public Personne(int id, String nom, String prenom, List<Telephone> telephonePersonnes) {
+		super();
+		this.id = id;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.telephonePersonnes = telephonePersonnes;
 	}
 
 	public int getId() {
