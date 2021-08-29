@@ -1,4 +1,6 @@
-package com.josamuna.project.simplecalculator;
+package com.josamuna.project.simplecalculator.utils;
+
+import com.josamuna.project.simplecalculator.interfaces.ICalculator;
 
 public class Calculator implements ICalculator {
 

@@ -1,4 +1,4 @@
-package com.josamuna.project.simplecalculator;
+package com.josamuna.project.simplecalculator.utils;
 
 public class ArithmeticSign {
 	public static final String SUM = "+";

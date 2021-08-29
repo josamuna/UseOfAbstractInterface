@@ -1,4 +1,4 @@
-package com.josamuna.project.simplecalculator;
+package com.josamuna.project.simplecalculator.interfaces;
 
 public interface IBehaviorCalculator {
 	

@@ -1,9 +1,13 @@
-package com.josamuna.project.simplecalculator;
+package com.josamuna.project.simplecalculator.implementations;
 
 import java.awt.FlowLayout;
 
 import javax.swing.JEditorPane;
 import javax.swing.JFrame;
+
+import com.josamuna.project.simplecalculator.interfaces.IBehaviorCalculator;
+import com.josamuna.project.simplecalculator.utils.ArithmeticSign;
+import com.josamuna.project.simplecalculator.utils.Calculator;
 
 public class WebCalculator implements IBehaviorCalculator {
 

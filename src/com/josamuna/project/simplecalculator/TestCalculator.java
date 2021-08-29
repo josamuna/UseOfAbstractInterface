@@ -8,6 +8,11 @@ import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
+import com.josamuna.project.simplecalculator.implementations.ConsoleCalculator;
+import com.josamuna.project.simplecalculator.implementations.GUICalculator;
+import com.josamuna.project.simplecalculator.implementations.WebCalculator;
+import com.josamuna.project.simplecalculator.utils.Calculator;
+
 public class TestCalculator {
 
 	public static void main(String[] args) {
