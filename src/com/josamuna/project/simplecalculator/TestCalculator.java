@@ -11,7 +11,7 @@ import javax.swing.JLabel;
 import com.josamuna.project.simplecalculator.implementations.ConsoleCalculator;
 import com.josamuna.project.simplecalculator.implementations.GUICalculator;
 import com.josamuna.project.simplecalculator.implementations.WebCalculator;
-import com.josamuna.project.simplecalculator.utils.Calculator;
+import com.josamuna.project.simplecalculator.model.Calculator;
 
 public class TestCalculator {
 

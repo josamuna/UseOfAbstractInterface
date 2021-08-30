@@ -1,7 +1,8 @@
-package com.josamuna.project.useofinterface;
+package com.josamuna.project.person.model;
 
 public class Student implements IPerson {
 
+	private int id;
 	private String firstName;
 	private String lastName;
 	private String rollNumber;
@@ -9,10 +10,19 @@ public class Student implements IPerson {
 	public Student() {
 	}
 	
-	public Student(String firstName, String lastName, String rollNumber) {
+	public Student(int id, String firstName, String lastName, String rollNumber) {
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.rollNumber = rollNumber;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getFirstName() {
@@ -40,9 +50,9 @@ public class Student implements IPerson {
 	}
 
 	@Override
-	public void showIdentity() {
-		System.out.println(String.format("Student : [FistName = %s, LastName = %s, RollNumber = %s]", 
-				firstName, lastName, rollNumber));
+	public void showIdentity(int id_person) {
+		System.out.println(String.format("Student : [Id = %s, FistName = %s, LastName = %s, RollNumber = %s]", 
+				id_person, this.firstName, this.lastName, this.rollNumber));
 
 	}
 

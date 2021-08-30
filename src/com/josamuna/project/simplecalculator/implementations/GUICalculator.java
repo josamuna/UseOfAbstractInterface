@@ -6,8 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import com.josamuna.project.simplecalculator.interfaces.IBehaviorCalculator;
+import com.josamuna.project.simplecalculator.model.Calculator;
 import com.josamuna.project.simplecalculator.utils.ArithmeticSign;
-import com.josamuna.project.simplecalculator.utils.Calculator;
 
 public class GUICalculator implements IBehaviorCalculator {
 	public GUICalculator() {

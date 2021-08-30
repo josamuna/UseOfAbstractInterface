@@ -1,4 +1,4 @@
-package com.josamuna.project.simplecalculator.utils;
+package com.josamuna.project.simplecalculator.model;
 
 import com.josamuna.project.simplecalculator.interfaces.ICalculator;
 

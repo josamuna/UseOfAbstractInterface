@@ -1,19 +1,28 @@
-package com.josamuna.project.useofinterface;
+package com.josamuna.project.person.model;
 
-public class Employe implements IPerson {
+public class Employee implements IPerson {
 
+	private int id;
 	private String firstName;
 	private String lastName;
 	private String cnss;
 	
-	public Employe() {
+	public Employee() {
 	}
 	
-	public Employe(String firstName, String lastName, String cnss) {
-		super();
+	public Employee(int id, String firstName, String lastName, String cnss) {
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.cnss = cnss;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getFirstName() {
@@ -41,9 +50,9 @@ public class Employe implements IPerson {
 	}
 
 	@Override
-	public void showIdentity() {
-		System.out.println(String.format("[Employe : FirstName = %s, LastName = %s, Social Security = %s]",
-				firstName, lastName, cnss));
+	public void showIdentity(int id_person) {
+		System.out.println(String.format("[Employee : Id = %s, FirstName = %s, LastName = %s, Social Security = %s]",
+				id_person, this.firstName, this.lastName, this.cnss));
 
 	}
 
