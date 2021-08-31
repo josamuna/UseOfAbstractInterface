@@ -23,11 +23,11 @@ public class TestInterface {
 		((Employee)employee2).setCnss("21548790145");
 		
 		// Show Values
-		student1.showIdentity(1);
-		student2.showIdentity(2);
+		student1.showStaticIdentity(1);
+		student2.showStaticIdentity(2);
 		
-		employee1.showIdentity(3);
-		employee2.showIdentity(4);
+		employee1.showStaticIdentity(3);
+		employee2.showStaticIdentity(4);
 	}
 
 }

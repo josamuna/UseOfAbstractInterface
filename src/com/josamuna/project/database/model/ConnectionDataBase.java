@@ -27,6 +27,7 @@ public class ConnectionDataBase {
 	public ConnectionDataBase(String username, String password, String host, String databaseName, String driver, String portNumber) {
 		this.username = username;
 		this.password = password;
+		this.host = host;
 		this.databaseName = databaseName;
 		this.driver = driver;
 		this.portNumber = portNumber;
@@ -35,6 +36,7 @@ public class ConnectionDataBase {
 	public ConnectionDataBase(String username, String password, String host, String databaseName, String driver) {
 		this.username = username;
 		this.password = password;
+		this.host = host;
 		this.databaseName = databaseName;
 		this.driver = driver;
 	}

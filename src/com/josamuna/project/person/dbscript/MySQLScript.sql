@@ -34,12 +34,12 @@ INSERT INTO conjoint(id,firstname,lastname) VALUES
 (1,'Espoir','Salumu'),(2,'Vanessa','Materanya');
 
 INSERT INTO person(id,id_conjoint,firstname,lastname) VALUES
-(1,1,"Natasha","Atolo"),(2,2,"Josué", "Isamuna"),(3,null,"Espoir", "Baraka"),
-(4,null,"Joel", "Kasereka"),(5,null,"Sarah", "Feza"),(6,null,"Sophie", "Alimasi");
+(1,1,'Natasha','Atolo'),(2,2,'Josué', 'Isamuna'),(3,null,'Espoir', 'Baraka'),
+(4,null,'Joel', 'Kasereka'),(5,null,'Sarah', 'Feza'),(6,null,'Sophie', 'Alimasi');
 
 INSERT INTO telephone(id,id_person,number) VALUES
-(1,1,"+243998532460"),(2,1,"+243857489703"),(3,2,"+250789140630"),(4,2,"+243816078930"),(5,2,"+243970537879"),(6,3,"+250789654107"),
-(7,3,"+243852105698"),(8,4,"+243825678402"),(9,4,"+243974015896"),(10,4,"+243898745016"),(11,4,"+250784013698"),(12,4,"+249858075758");
+(1,1,'+243998532460'),(2,1,'+243857489703'),(3,2,'+250789140630'),(4,2,'+243816078930'),(5,2,'+243970537879'),(6,3,'+250789654107'),
+(7,3,'+243852105698'),(8,4,'+243825678402'),(9,4,'+243974015896'),(10,4,'+243898745016'),(11,4,'+250784013698'),(12,4,'+249858075758');
 
 -- All telephone of a specific person
 SELECT person.id,person.firstname,person.lastname,telephone.id,telephone.id_person,telephone.number FROM telephone 

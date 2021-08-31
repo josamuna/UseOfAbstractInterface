@@ -1,5 +1,7 @@
 package com.josamuna.project.person.model;
 
+import java.sql.SQLException;
+
 public class Student implements IPerson {
 
 	private int id;
@@ -50,10 +52,22 @@ public class Student implements IPerson {
 	}
 
 	@Override
-	public void showIdentity(int id_person) {
-		System.out.println(String.format("Student : [Id = %s, FistName = %s, LastName = %s, RollNumber = %s]", 
+	public void showStaticIdentity(int id_person) {
+		System.out.println(String.format("Student : [Id = %s, %s %s, RollNumber = %s]", 
 				id_person, this.firstName, this.lastName, this.rollNumber));
 
+	}
+
+	@Override
+	public void showDynamicIdentity(int id_person) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void showDynamicIdentity() throws ClassNotFoundException, SQLException {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

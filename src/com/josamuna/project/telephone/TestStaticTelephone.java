@@ -2,7 +2,7 @@ package com.josamuna.project.telephone;
 
 import com.josamuna.project.telephone.model.Person;
 
-public class TestTelephone {
+public class TestStaticTelephone {
 
 	public static void main(String[] args) {
 		
